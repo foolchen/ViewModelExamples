@@ -28,7 +28,6 @@ class ListActivity : AppCompatActivity() {
     vm.getArticles().observe(this, Observer<List<Article>> { data ->
       adapter.set(data)
     })
-    vm.loadAsynchronous()
   }
 
   override fun onPostCreate(savedInstanceState: Bundle?) {

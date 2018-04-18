@@ -51,7 +51,12 @@ class ListViewModel : ViewModel() {
   /**
    * 获取文章列表
    */
-  fun getArticles(): LiveData<List<Article>> = articles
+  fun getArticles(): LiveData<List<Article>> {
+    if (articles.value == null) {
+      loadAsynchronous()
+    }
+    return articles
+  }
 
   /**
    * 尝试动态改变数据（异步）

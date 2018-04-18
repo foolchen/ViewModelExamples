@@ -1,3 +1,7 @@
 <resources>
   <string name="app_name">ViewModelExamples</string>
+  <string name="text_list">列表</string>
+  <string name="text_change_data_asynchronous">改变数据（异步）</string>
+  <string name="text_change_data_synchronous">改变数据（同步）</string>
+  <string name="text_reload_data">重新加载数据</string>
 </resources>

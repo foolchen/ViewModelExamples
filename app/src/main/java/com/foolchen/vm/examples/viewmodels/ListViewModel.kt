@@ -5,7 +5,6 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import android.content.Context
-import android.os.SystemClock
 import android.util.Log
 import com.foolchen.vm.examples.ListActivity
 import com.foolchen.vm.examples.data.Article
@@ -99,7 +98,6 @@ class ListViewModel : ViewModel() {
           data.forEach { it.time *= 1000 }
 
           Log.d(TAG, "异步加载数据完成")
-          SystemClock.sleep(3000)
           it.onNext(data)
           it.onComplete()
         }

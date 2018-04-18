@@ -18,7 +18,7 @@ import java.util.*
  */
 class ListAdapter(data: List<Article>?) : RecyclerView.Adapter<ListAdapter.ListViewHolder>() {
   private val data = ArrayList<Article>()
-  private val formatter = SimpleDateFormat("yyyy-MM-dd mm:ss", Locale.getDefault())
+  private val formatter = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
 
   init {
     if (data != null) {
